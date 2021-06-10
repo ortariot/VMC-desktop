@@ -51,13 +51,13 @@ class WindowsForms(QtWidgets.QMainWindow, vd_design.Ui_MainWindow, ValveGPIO):
         self.slaide_action(1, self.vlv1_verticalSlider, self.vlv1_lcdNumber)
 
     def slider_vlv2(self):
-        self.slaide_action(2, self.vlv1_verticalSlider, self.vlv1_lcdNumber)
+        self.slaide_action(2, self.vlv2_verticalSlider, self.vlv2_lcdNumber)
 
     def slider_vlv3(self):
-        self.slaide_action(3, self.vlv1_verticalSlider, self.vlv1_lcdNumber)
+        self.slaide_action(3, self.vlv3_verticalSlider, self.vlv3_lcdNumber)
 
     def slider_vlv4(self):
-        self.slaide_action(4, self.vlv1_verticalSlider, self.vlv1_lcdNumber)
+        self.slaide_action(4, self.vlv4_verticalSlider, self.vlv4_lcdNumber)
 
     def btn_vlv1(self):
         self.button_action(1, self.vlv1_button, self.vlv1_verticalSlider)
