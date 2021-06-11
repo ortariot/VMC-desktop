@@ -27,10 +27,17 @@ class ValveGPIO():
                             }
 
     def set_duty(self, valve_num, duty):
-        self.valve_store[valve_num].ChangeDutyCycle(duty)
+        if valve_num == 2 or valve_num == 4:
+            self.valve_store[valve_num].ChangeDutyCycle(duty)
+        elif valve_num == 1 or valve_num == 3:
+            self.valve_store[valve_num]\
+                .hardware_PWM(self.pin_store[valve_num], 1, duty * 10000)
 
     def set_freq(self, valve_num, freq):
-        self.valve_store[valve_num].ChangeFrequency(freq)
+        if valve_num == 2 or valve_num == 4:
+            self.valve_store[valve_num].ChangeFrequency(freq)
+        elif valve_num == 1 or valve_num == 3:
+            pass
 
     def sw_exit(self):
         GPIO.cleanup()
