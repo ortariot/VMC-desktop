@@ -10,7 +10,7 @@ class ValveGPIO():
         GPIO.setwarnings(False)
         GPIO.cleanup()
         # pin inicialization
-        pin_valve_one = 2
+        pin_valve_one = 24
         pin_valve_two = 3
         pin_valve_three = 27
         pin_valve_for = 5

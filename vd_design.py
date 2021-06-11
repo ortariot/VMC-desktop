@@ -79,6 +79,7 @@ class Ui_MainWindow(object):
         self.vlv1_verticalSlider.setOrientation(QtCore.Qt.Vertical)
         self.vlv1_verticalSlider.setObjectName("vlv1_verticalSlider")
         self.vlv1_verticalSlider.setEnabled(False)
+        self.vlv1_verticalSlider.cl
         self.horizontalLayout.addWidget(self.vlv1_verticalSlider)
         self.verticalLayout.addWidget(self.widget)
         spacerItem1 = QtWidgets.QSpacerItem(72, 20,

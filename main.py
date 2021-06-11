@@ -40,6 +40,7 @@ class WindowsForms(QtWidgets.QMainWindow, vd_design.Ui_MainWindow, ValveGPIO):
         elif button_obj.text() == f"VALVE{valve_num} OFF":
             self.sw_stop(valve_num)
             button_obj.setText(f"VALVE{valve_num} ON")
+            slider_obj.setValue(1)
             slider_obj.setEnabled(False)
 
     def slaide_action(self, valve_num, slider_obj, dysplay_obj):
